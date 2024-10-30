@@ -1,7 +1,7 @@
 def custom_write(file_name='test.txt', *strings):
     strings_positions = dict()
     i=1
-    with open(file_name, 'a+', encoding='utf-8') as f:
+    with open(file_name, 'w', encoding='utf-8') as f:
         for s in strings:
             for j in s:
                 num_str = i
@@ -13,9 +13,9 @@ def custom_write(file_name='test.txt', *strings):
 
 info = [
     'Text for tell.',
-    'Используйте кодировку utf-8.',
+    'Г€Г±ГЇГ®Г«ГјГ§ГіГ©ГІГҐ ГЄГ®Г¤ГЁГ°Г®ГўГЄГі utf-8.',
     'Because there are 2 languages!',
-    'Спасибо!'
+    'Г‘ГЇГ Г±ГЁГЎГ®!'
     ]
 
 result = custom_write('test.txt', info)
